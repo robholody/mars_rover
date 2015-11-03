@@ -24,6 +24,18 @@ end
 		end	
 	end
 
+	def move 
+		if @d == "n"
+			@y = @y + 1
+		elsif @d == "s"
+			@y = @y - 1
+		elsif @d == "e"
+			@x = @x + 1
+		else @d == "w"
+			@x = @x - 1 
+		end	
+	end
+
 	
 
 end
