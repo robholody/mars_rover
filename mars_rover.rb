@@ -36,7 +36,36 @@ end
 		end	
 	end
 
+	def turn(d)
+		if d == "l"
+			if @d == "n"
+			@d = "w"
+			elsif @d == "s"
+			@d = "e"
+			elsif @d == "e"
+			@d = "n"
+			else 
+			@d = "s"
+			end
+				
 	
+		else #R
+			if @d == "n"
+			@d = "e"
+			elsif @d == "s"
+			@d == "w"
+			elsif @d == "w"
+			@d == "n"
+			else
+			@d = "s"
+
+			end
+		end
+	end
+
+	def display_coordinates
+		puts "#{@x}, #{@y}, #{@d}"
+	end
 
 end
 
